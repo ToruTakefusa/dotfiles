@@ -1,0 +1,29 @@
+;; -*- emacs-lisp -*- <18/11/17 05:32:38 /home/toru/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+(((tramp-file-name "sudo" "root" nil "my_gentoo" nil nil nil)
+  ("uname" "Linux 4.14.65-gentoo")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("file-exists" "test -e")
+  ("case-insensitive" nil)
+  ("ls" "/bin/ls --color=never")
+  ("ls-quoting-style" t)
+  ("ls-dired" t)
+  ("stat" "env QUOTING_STYLE=locale \\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 0)
+  ("readlink" "\\readlink")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("gid-string" "root")
+  ("uid-integer" 0)
+  ("~root" "/root")
+  ("tmpdir" "/sudo:root@my_gentoo:/tmp")
+  ("touch-t" t)
+  ("touch" "\\touch")))
