@@ -44,15 +44,15 @@
 (setq-default tab-width 4)
 
 ;; hilight
-(defface my-hl-line-face
-  '((((class color) (background dark))
-     (:background "NavyBlue" t))
-    (((class color) (background light))
-     (:background "LightSkyBlue" t))
-    (t (:bold t)))
-  "hi-line's my face")
-(setq hl-line-face 'my-hl-line-face)
-(global-hl-line-mode t)
+;;(defface my-hl-line-face
+;;  '((((class color) (background dark))
+;;     (:background "NavyBlue" t))
+;;    (((class color) (background light))
+;;     (:background "LightSkyBlue" t))
+;;    (t (:bold t)))
+;;  "hi-line's my face")
+;;(setq hl-line-face 'my-hl-line-face)
+;;(global-hl-line-mode t)
 
 ;; paren-mode
 (setq show-paren-delay 0)

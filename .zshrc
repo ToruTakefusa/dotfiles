@@ -65,8 +65,11 @@ ZSH_THEME="candy"
 plugins=(
 	git
 	zsh-syntax-highlighting
+	zsh-completions
 )
 
+# zsh-completions
+autoload -U compinit && compinit -U
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
