@@ -74,6 +74,8 @@
   (define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
   (ac-config-default)
   (setq ac-use-menu-map t)
+  (setq ac-delay 0)
+  (setq ac-auto-show-menu 0.05)
   (setq ac-ignore-case nil))
 
 ;; helm
@@ -81,3 +83,5 @@
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; disable menu-bar
+(menu-bar-mode -1)
