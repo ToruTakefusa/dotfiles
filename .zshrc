@@ -8,7 +8,7 @@ export ZSH="/home/toru/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="candy"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -121,4 +121,8 @@ setopt hist_reduce_blanks
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export LESS=-q
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin/code
+source $HOME/.cargo/env
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export RUST_SRC_PATH=/home/toru/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library
+export GIT_PAGER="LESSCHARSET=utf-8 less"
+export LESS="-iRMXS"
