@@ -72,6 +72,8 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-completions
+  rust
+  rustup
   )
 
 source $ZSH/oh-my-zsh.sh
