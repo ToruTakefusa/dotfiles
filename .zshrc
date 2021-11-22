@@ -122,9 +122,9 @@ setopt hist_reduce_blanks
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export LESS=-q
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin/code
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin/code:$HOME/tools/tmux
 source $HOME/.cargo/env
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-export RUST_SRC_PATH=/home/toru/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library
+export RUST_SRC_PATH=$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library
 export GIT_PAGER="LESSCHARSET=utf-8 less"
 export LESS="-iRMXS"
