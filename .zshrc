@@ -73,7 +73,6 @@ plugins=(
   zsh-syntax-highlighting
   zsh-completions
   rust
-  rustup
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -126,5 +125,14 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/us
 source $HOME/.cargo/env
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export RUST_SRC_PATH=$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library
+
 export GIT_PAGER="LESSCHARSET=utf-8 less"
 export LESS="-iRMXS"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+alias emacs="emacs -nw"
+
+#if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+#    source /etc/profile.d/vte.sh
+#fi
