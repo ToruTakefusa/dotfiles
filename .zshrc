@@ -75,6 +75,7 @@ plugins=(
   rust
   )
 
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
 # zsh completions
@@ -129,7 +130,7 @@ export RUST_SRC_PATH=$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/li
 export GIT_PAGER="LESSCHARSET=utf-8 less"
 export LESS="-iRMXS"
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:$HOME/.cargo/bin
 
 alias emacs="emacs -nw"
 
